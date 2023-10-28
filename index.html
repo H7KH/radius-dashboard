@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radius-Dashboard</title>
+    <link rel="icon" href="Images/radius-fav.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="not-support">
+      <p class="notice">
+        This design is not currently supported on mobile or tablet devices.
+        Please open it on a desktop computer for the best experience.
+      </p>
+    </div>
+    <section class="side-menu">
+      <div class="initial-data">
+        <span class="side-menu__logo"
+          ><img src="Images/Logo.svg" alt=""
+        /></span>
+        <div class="side-menu__face-div">
+          <picture>
+            <source type="image/webp" srcset="Images/human.webp" />
+            <source type="image/jpeg" srcset="Images/human.jpg" />
+            <img class="side-menu__face" src="Images/human.jpg" alt="" />
+          </picture>
+        </div>
+        <div class="side-menu__welcoming">
+          <p class="welcome">Welcome Back</p>
+          <h3 class="person__name">Mark Johnson</h3>
+        </div>
+      </div>
+      <div class="all-items__container">
+        <div class="items__primary">
+          <div class="item__container item--active">
+            <div class="option__selected"></div>
+            <div class="option__data">
+              <img class="active__icon" src="Images/Dashboard.svg" alt="" />
+              <a href="#" class="option--text-active">Dashboard</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Statistics.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Statistics</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Payment.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Payment</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img
+                class="nonactive__icon"
+                src="Images/Transactions.svg"
+                alt=""
+              />
+              <a href="#" class="option--text-nonactive">Transactions</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Products.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Products</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Customer.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Customer</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Messages.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Messages</a>
+            </div>
+          </div>
+          <div class="item__container">
+            <div class="option__data">
+              <img class="nonactive__icon" src="Images/Settings.svg" alt="" />
+              <a href="#" class="option--text-nonactive">Settings</a>
+            </div>
+          </div>
+        </div>
+        <div class="item__container">
+          <div class="option__data">
+            <img class="nonactive__icon" src="Images/Logout.svg" alt="" />
+            <a href="#" class="option--text-nonactive">Logout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="details__container">
+      <div class="search-bar">
+        <div class="search-bar__title">
+          <h1 class="title__text">Dashboard</h1>
+          <p class="subtitle__text">Payments Updates</p>
+        </div>
+        <div class="search__inputgroup">
+          <img src="Images/Search.svg" alt="" />
+          <input
+            class="search__input"
+            type="text"
+            name="search"
+            id=""
+            placeholder="Search"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="report__container">
+        <div class="report report--balance">
+          <div class="report__header">
+            <div class="report__title">
+              <img src="Images/Balance.svg" alt="" />
+              <h3 class="report__name">Balance</h3>
+            </div>
+            <p class="report__percent">+ 17%</p>
+          </div>
+          <h1 class="report__price">$ 56,874</h1>
+          <img class="report__chart" src="Images/Green-chart.svg" alt="" />
+        </div>
+        <div class="report report--sales">
+          <div class="report__header">
+            <div class="report__title">
+              <img src="Images/Sales.svg" alt="" />
+              <h3 class="report__name">Sales</h3>
+            </div>
+            <p class="report__percent">+ 23%</p>
+          </div>
+          <h1 class="report__price">$ 24,575</h1>
+          <img class="report__chart" src="Images/Yellow-chart.svg" alt="" />
+        </div>
+        <div class="report report--upgrade">
+          <h2 class="upgrade__title">Upgrade</h2>
+          <p class="upgrade__subtitle">
+            Get more information and opportunities
+          </p>
+          <button class="upgrade__btn">Go Pro</button>
+        </div>
+      </div>
+      <div class="statistics__container">
+        <div class="statistics__header">
+          <h2 class="statistics__title">User in the last week</h2>
+          <div class="statistics__subtitle">
+            <h3 class="statistics__percent">+ 3.2%</h3>
+            <p class="statistics__more">See statistics for all time</p>
+          </div>
+        </div>
+        <div class="statistics__barchart-section">
+          <ul class="statistics__vertical-numbers">
+            <li>40 k</li>
+            <li>30 k</li>
+            <li>20 k</li>
+            <li>10 k</li>
+            <li>0 k</li>
+          </ul>
+          <div class="statistics__total-barchart">
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-four.svg" alt="" />
+              <p class="day">Mon</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-two.svg" alt="" />
+              <p class="day">Tue</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-three.svg" alt="" />
+              <p class="day">Wed</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-four.svg" alt="" />
+              <p class="day">Thu</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-five.svg" alt="" />
+              <p class="day">Fri</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-six.svg" alt="" />
+              <p class="day">Sat</p>
+            </div>
+            <div class="statistics__single-barchart">
+              <img class="barchart" src="Images/barchart-seven.svg" alt="" />
+              <p class="day">Sun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orders__container">
+        <div class="orders__header">
+          <h1 class="orders__title">Last Orders</h1>
+          <p class="orders__more">View All Orders</p>
+        </div>
+        <div class="orders__list">
+          <div class="orders__icon-name">
+            <img class="orders__icon" src="Images/Profile.svg" alt="" />
+            <p class="orders__data">David Astee</p>
+          </div>
+          <p class="orders__data">$1,456</p>
+          <p class="orders__data">11 Sep 2023</p>
+        </div>
+        <div class="orders__list">
+          <div class="orders__icon-name">
+            <img class="orders__icon" src="Images/Profile.svg" alt="" />
+            <p class="orders__data">Maria Hulama</p>
+          </div>
+          <p class="orders__data">$42,437</p>
+          <p class="orders__data">11 Sep 2023</p>
+        </div>
+        <div class="orders__list">
+          <div class="orders__icon-name">
+            <img class="orders__icon" src="Images/Profile.svg" alt="" />
+            <p class="orders__data">Arnold Swarz</p>
+          </div>
+          <p class="orders__data">$3,500</p>
+          <p class="orders__data">11 Sep 2023</p>
+        </div>
+      </div>
+    </section>
+    <section class="profits-sales">
+      <div class="monthly__profits-container">
+        <div class="profits__header">
+          <h1 class="profits__title">Monthly Profits</h1>
+          <p class="profits__subtitle">Total Profit Growth of 26%</p>
+        </div>
+        <div class="profits__piechart-container">
+          <div class="profits__piechart">
+            <img class="piechart" src="Images/pie-chart.svg" alt="" />
+            <div class="piechart__numbers">
+              <h3 class="piechart__title">Total</h3>
+              <p class="piechart__price">$76,356</p>
+            </div>
+          </div>
+          <div class="profits__details-container">
+            <div class="profits__details">
+              <p class="profits__details-name">Giveaway</p>
+              <h3 class="profits__percent">60%</h3>
+              <div class="progress">
+                <div class="progress color--purple"></div>
+              </div>
+            </div>
+            <div class="profits__details">
+              <p class="profits__details-name">Affiliate</p>
+              <h3 class="profits__percent">24%</h3>
+              <div class="progress">
+                <div class="progress color--green"></div>
+              </div>
+            </div>
+            <div class="profits__details">
+              <p class="profits__details-name">Offline Sales</p>
+              <h3 class="profits__percent">16%</h3>
+              <div class="progress">
+                <div class="progress color--yellow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recent__sales-container">
+        <div class="sales__header">
+          <h1 class="sales__title">Recent Sales</h1>
+          <p class="sales__more">See All</p>
+        </div>
+        <div class="sales__details-container">
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Steven Summer</p>
+                <p class="sales-time">2 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Jordan Maizee</p>
+                <p class="sales-time">20 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Jessica Alba</p>
+                <p class="sales-time">15 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Anna Armas</p>
+                <p class="sales-time">9 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Angelina Boo</p>
+                <p class="sales-time">10 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+          <div class="sales__details">
+            <div class="sales__info">
+              <img class="sales__info-img" src="Images/Profile.svg" alt="" />
+              <div class="sales__info-data">
+                <p class="sales-name">Anna Kiley</p>
+                <p class="sales-time">4 Minutes Ago</p>
+              </div>
+            </div>
+            <p class="sales-price">+ $52.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

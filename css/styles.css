@@ -255,6 +255,11 @@ li {
   border-radius: 12px;
   padding: 1.4rem 2.4rem;
   gap: 1.2rem;
+  transition: box-shadow 200ms;
+}
+
+.search__inputgroup:focus-within {
+  box-shadow: 0px 0px 0px 2px rgba(255, 116, 249, 0.5);
 }
 
 .search__input {
@@ -267,6 +272,10 @@ li {
   letter-spacing: -0.32px;
   border: 0;
   outline: 0;
+}
+
+.search__input:focus {
+  color: var(--colors-grey-300);
 }
 
 /* ---------- Reports-laptop ---------- */
@@ -695,6 +704,16 @@ li {
   background: var(--colors-purple-50);
   width: 60%;
   height: 0.5rem;
+  animation: purple-progress 3s 2s ease forwards;
+}
+
+@keyframes purple-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
 }
 
 .progress .color--green {
@@ -702,6 +721,16 @@ li {
   background: var(--colors-green-50);
   width: 24%;
   height: 0.5rem;
+  animation: green-progress 3s 2s ease forwards;
+}
+
+@keyframes green-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24%%;
+  }
 }
 
 .progress .color--yellow {
@@ -709,6 +738,16 @@ li {
   background: var(--colors-yellow-150);
   width: 16%;
   height: 0.5rem;
+  animation: yellow-progress 3s 2s ease forwards;
+}
+
+@keyframes yellow-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16%%;
+  }
 }
 
 /* ---------- Monthly Profits - large screens ---------- */
